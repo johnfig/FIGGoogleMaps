@@ -482,6 +482,7 @@
 			baseConfigurationReference = 0457D28EE6D0B13D2B4C1CB3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FIGGoogleMaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = johnfigueiredo.FIGGoogleMaps;
