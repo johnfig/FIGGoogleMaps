@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6073D24C71901E73DB5F916AA3D1E0598639A288",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6073D24C71901E73DB5F916AA3D1E0598639A288" : 0,
+    "C0D8EF86A604B55BCA689D5F426B4B6E73B85FFB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D681033F-7F37-4035-BA7D-5B250C758CBD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6073D24C71901E73DB5F916AA3D1E0598639A288" : "FIGGoogleMaps\/",
+    "C0D8EF86A604B55BCA689D5F426B4B6E73B85FFB" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FIGGoogleMaps",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FIGGoogleMaps.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:johnfig\/FIGGoogleMaps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6073D24C71901E73DB5F916AA3D1E0598639A288"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:johnfig\/mongoid.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C0D8EF86A604B55BCA689D5F426B4B6E73B85FFB"
+    }
+  ]
+}
