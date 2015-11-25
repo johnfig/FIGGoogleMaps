@@ -12,18 +12,39 @@ import GoogleMaps
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var addressLabel: UILabel!
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        // Do any additional setup after loading the view, typically from a nib.
+        mapView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
+        
+        // 1
+        let geocoder = GMSGeocoder()
+        
+        // 2
+        geocoder.reverseGeocodeCoordinate(coordinate) { response, error in
+            if let address = response?.firstResult() {
+                
+                // 3
+                let lines = address.lines as! [String]
+                self.addressLabel.text = lines.joinWithSeparator("\n")
+                
+                // 4
+                UIView.animateWithDuration(0.25) {
+                    self.view.layoutIfNeeded()
+                }
+            }
+        }
     }
 }
 
@@ -55,6 +76,13 @@ extension ViewController: CLLocationManagerDelegate {
             locationManager.stopUpdatingLocation()
         }
         
+    }
+}
+
+// MARK: - GMSMapViewDelegate
+extension ViewController: GMSMapViewDelegate {
+    func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
+        reverseGeocodeCoordinate(position.target)
     }
 }
 

@@ -22,14 +22,24 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3y-XS-xjx">
+                                <rect key="frame" x="0.0" y="579" width="600" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ryk-RE-zaZ" secondAttribute="trailing" id="3Ux-Xo-39e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ryk-RE-zaZ" secondAttribute="trailing" constant="-20" id="EhP-i8-QHq"/>
                             <constraint firstItem="ryk-RE-zaZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Omf-ab-w4h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d3y-XS-xjx" secondAttribute="bottom" id="ZFh-MT-Ybs"/>
                             <constraint firstItem="ryk-RE-zaZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bAZ-G9-vIX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ryk-RE-zaZ" secondAttribute="bottom" id="lr1-Yf-uaH"/>
+                            <constraint firstItem="d3y-XS-xjx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="tUI-vY-ndQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d3y-XS-xjx" secondAttribute="trailing" constant="-20" id="tfL-11-ahg"/>
                             <constraint firstItem="ryk-RE-zaZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zYO-3D-gwF"/>
                         </constraints>
                         <variation key="default">
@@ -40,6 +50,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="d3y-XS-xjx" id="tks-kh-6JW"/>
                         <outlet property="mapView" destination="ryk-RE-zaZ" id="c2V-7J-rFc"/>
                     </connections>
                 </viewController>
