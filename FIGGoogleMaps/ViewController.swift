@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var pinImageVerticalConstraint: NSLayoutConstraint!
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -40,7 +41,13 @@ class ViewController: UIViewController {
                 self.addressLabel.text = lines.joinWithSeparator("\n")
                 
                 // 4
+                // 1
+                let labelHeight = self.addressLabel.intrinsicContentSize().height
+                self.mapView.padding = UIEdgeInsets(top: self.topLayoutGuide.length, left: 0,
+                    bottom: labelHeight, right: 0)
+                
                 UIView.animateWithDuration(0.25) {
+                    self.pinImageVerticalConstraint.constant = ((labelHeight - self.topLayoutGuide.length) * 0.5)
                     self.view.layoutIfNeeded()
                 }
             }

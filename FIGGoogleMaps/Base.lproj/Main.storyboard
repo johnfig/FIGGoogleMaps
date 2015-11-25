@@ -33,8 +33,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ryk-RE-zaZ" secondAttribute="trailing" id="3Ux-Xo-39e"/>
+                            <constraint firstItem="d3y-XS-xjx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="7ph-fO-cyg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ryk-RE-zaZ" secondAttribute="trailing" constant="-20" id="EhP-i8-QHq"/>
                             <constraint firstItem="ryk-RE-zaZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Omf-ab-w4h"/>
+                            <constraint firstItem="ryk-RE-zaZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vfz-Do-0lW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d3y-XS-xjx" secondAttribute="bottom" id="ZFh-MT-Ybs"/>
                             <constraint firstItem="ryk-RE-zaZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bAZ-G9-vIX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ryk-RE-zaZ" secondAttribute="bottom" id="lr1-Yf-uaH"/>
@@ -46,12 +48,15 @@
                             <mask key="constraints">
                                 <exclude reference="3Ux-Xo-39e"/>
                                 <exclude reference="Omf-ab-w4h"/>
+                                <exclude reference="Vfz-Do-0lW"/>
+                                <exclude reference="7ph-fO-cyg"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="d3y-XS-xjx" id="tks-kh-6JW"/>
                         <outlet property="mapView" destination="ryk-RE-zaZ" id="c2V-7J-rFc"/>
+                        <outlet property="pinImageVerticalConstraint" destination="lr1-Yf-uaH" id="6a1-aR-kVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
