@@ -16,6 +16,7 @@
 		5C290B4D1C058BEB00A133B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C290B4B1C058BEB00A133B5 /* LaunchScreen.storyboard */; };
 		5C290B581C058BEB00A133B5 /* FIGGoogleMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C290B571C058BEB00A133B5 /* FIGGoogleMapsTests.swift */; };
 		5C290B631C058BEB00A133B5 /* FIGGoogleMapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C290B621C058BEB00A133B5 /* FIGGoogleMapsUITests.swift */; };
+		5C7C5C291C06995800FD9824 /* CameraMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5C281C06995800FD9824 /* CameraMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5C290B5E1C058BEB00A133B5 /* FIGGoogleMapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FIGGoogleMapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C290B621C058BEB00A133B5 /* FIGGoogleMapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIGGoogleMapsUITests.swift; sourceTree = "<group>"; };
 		5C290B641C058BEB00A133B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C7C5C281C06995800FD9824 /* CameraMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMapViewController.swift; sourceTree = "<group>"; };
 		A7DD67235E331320A4F99E3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DC5166C491FA34732B9A627B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 				5C290B4B1C058BEB00A133B5 /* LaunchScreen.storyboard */,
 				5C290B4E1C058BEB00A133B5 /* Info.plist */,
 				5C290B461C058BEB00A133B5 /* FIGGoogleMaps.xcdatamodeld */,
+				5C7C5C281C06995800FD9824 /* CameraMapViewController.swift */,
 			);
 			path = FIGGoogleMaps;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				5C290B421C058BEB00A133B5 /* ViewController.swift in Sources */,
 				5C290B481C058BEB00A133B5 /* FIGGoogleMaps.xcdatamodeld in Sources */,
+				5C7C5C291C06995800FD9824 /* CameraMapViewController.swift in Sources */,
 				5C290B401C058BEB00A133B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +486,7 @@
 			baseConfigurationReference = 0457D28EE6D0B13D2B4C1CB3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -490,6 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = johnfigueiredo.FIGGoogleMaps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -498,6 +504,7 @@
 			baseConfigurationReference = A7DD67235E331320A4F99E3E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FIGGoogleMaps/Info.plist;
