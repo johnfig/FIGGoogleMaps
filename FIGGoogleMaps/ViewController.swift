@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         mapView.delegate = self
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,7 +79,7 @@ extension ViewController: CLLocationManagerDelegate {
             
             // 7
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-            
+          
             // 8
             locationManager.stopUpdatingLocation()
         }
