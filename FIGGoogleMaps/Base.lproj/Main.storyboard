@@ -83,7 +83,7 @@
                         <viewControllerLayoutGuide type="top" id="Krh-U5-G7C"/>
                         <viewControllerLayoutGuide type="bottom" id="tv7-FP-SSD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9bK-Nn-jiO">
+                    <view key="view" contentMode="scaleToFill" id="9bK-Nn-jiO" customClass="pano">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -123,10 +123,26 @@
                     <view key="view" contentMode="scaleToFill" id="V35-SU-d5R">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8u-px-tXz" customClass="GMSPanoramaView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J8u-px-tXz" firstAttribute="top" secondItem="KTO-9s-077" secondAttribute="bottom" id="93q-Ox-qE8"/>
+                            <constraint firstItem="J8u-px-tXz" firstAttribute="leading" secondItem="V35-SU-d5R" secondAttribute="leadingMargin" constant="-20" id="Tak-m9-ppl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J8u-px-tXz" secondAttribute="trailing" constant="-20" id="lJf-rM-Kfs"/>
+                            <constraint firstItem="et2-BI-Gfb" firstAttribute="top" secondItem="J8u-px-tXz" secondAttribute="bottom" id="qV8-RV-ruA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Street" image="heart" id="Wcw-Bk-T9R"/>
+                    <connections>
+                        <outlet property="panoView" destination="J8u-px-tXz" id="4bH-k5-Rfq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4y-Uo-t87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
