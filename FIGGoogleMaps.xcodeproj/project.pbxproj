@@ -18,6 +18,7 @@
 		5C290B631C058BEB00A133B5 /* FIGGoogleMapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C290B621C058BEB00A133B5 /* FIGGoogleMapsUITests.swift */; };
 		5C7C5C291C06995800FD9824 /* CameraMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5C281C06995800FD9824 /* CameraMapViewController.swift */; };
 		5C7C5C2B1C06B3DF00FD9824 /* StreetMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5C2A1C06B3DF00FD9824 /* StreetMapViewController.swift */; };
+		5C7C5C2D1C06B86D00FD9824 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5C2C1C06B86D00FD9824 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		5C290B641C058BEB00A133B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C7C5C281C06995800FD9824 /* CameraMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMapViewController.swift; sourceTree = "<group>"; };
 		5C7C5C2A1C06B3DF00FD9824 /* StreetMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreetMapViewController.swift; sourceTree = "<group>"; };
+		5C7C5C2C1C06B86D00FD9824 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A7DD67235E331320A4F99E3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DC5166C491FA34732B9A627B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 				5C290B461C058BEB00A133B5 /* FIGGoogleMaps.xcdatamodeld */,
 				5C7C5C281C06995800FD9824 /* CameraMapViewController.swift */,
 				5C7C5C2A1C06B3DF00FD9824 /* StreetMapViewController.swift */,
+				5C7C5C2C1C06B86D00FD9824 /* MapViewController.swift */,
 			);
 			path = FIGGoogleMaps;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C290B421C058BEB00A133B5 /* ViewController.swift in Sources */,
+				5C7C5C2D1C06B86D00FD9824 /* MapViewController.swift in Sources */,
 				5C290B481C058BEB00A133B5 /* FIGGoogleMaps.xcdatamodeld in Sources */,
 				5C7C5C2B1C06B3DF00FD9824 /* StreetMapViewController.swift in Sources */,
 				5C7C5C291C06995800FD9824 /* CameraMapViewController.swift in Sources */,
@@ -493,6 +497,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FIGGoogleMaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -511,6 +516,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = FIGGoogleMaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = johnfigueiredo.FIGGoogleMaps;

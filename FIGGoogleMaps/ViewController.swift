@@ -48,7 +48,7 @@ class ViewController: UIViewController {
                     bottom: labelHeight, right: 0)
                 
                 UIView.animateWithDuration(0.25) {
-                    self.pinImageVerticalConstraint.constant = ((labelHeight - self.topLayoutGuide.length) * 0.5)
+                    self.pinImageVerticalConstraint.constant = ((labelHeight - self.topLayoutGuide.length) * 0.5 + 38)
                     self.view.layoutIfNeeded()
                 }
             }

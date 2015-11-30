@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kdZ-Bs-BXC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fk1-NX-kbp">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -43,15 +43,15 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ryk-RE-zaZ" secondAttribute="bottom" id="2Dg-2j-vHI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ryk-RE-zaZ" secondAttribute="trailing" id="3Ux-Xo-39e"/>
                             <constraint firstItem="d3y-XS-xjx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="7ph-fO-cyg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ryk-RE-zaZ" secondAttribute="trailing" constant="-20" id="EhP-i8-QHq"/>
                             <constraint firstItem="ryk-RE-zaZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Omf-ab-w4h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d3y-XS-xjx" secondAttribute="bottom" id="QRk-cp-Ngu"/>
                             <constraint firstItem="ryk-RE-zaZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vfz-Do-0lW"/>
                             <constraint firstItem="2Fp-Ui-1Dk" firstAttribute="centerX" secondItem="d3y-XS-xjx" secondAttribute="centerX" id="Vs5-Wy-J27"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d3y-XS-xjx" secondAttribute="bottom" id="ZFh-MT-Ybs"/>
-                            <constraint firstItem="ryk-RE-zaZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bAZ-G9-vIX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ryk-RE-zaZ" secondAttribute="bottom" id="lr1-Yf-uaH"/>
+                            <constraint firstItem="ryk-RE-zaZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZaP-TU-gt3"/>
                             <constraint firstItem="d3y-XS-xjx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="tUI-vY-ndQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d3y-XS-xjx" secondAttribute="trailing" constant="-20" id="tfL-11-ahg"/>
                             <constraint firstItem="2Fp-Ui-1Dk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zXS-Rd-KMp"/>
@@ -69,7 +69,6 @@
                     <connections>
                         <outlet property="addressLabel" destination="d3y-XS-xjx" id="tks-kh-6JW"/>
                         <outlet property="mapView" destination="ryk-RE-zaZ" id="c2V-7J-rFc"/>
-                        <outlet property="pinImageVerticalConstraint" destination="lr1-Yf-uaH" id="6a1-aR-kVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -113,8 +112,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxu-H6-rfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Street-->
+        <scene sceneID="inI-uh-XMC">
+            <objects>
+                <viewController id="ByI-jv-sds" userLabel="Street" customClass="StreetMapViewController" customModule="FIGGoogleMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KTO-9s-077"/>
+                        <viewControllerLayoutGuide type="bottom" id="et2-BI-Gfb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V35-SU-d5R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Street" image="heart" id="Wcw-Bk-T9R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4y-Uo-t87" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="1171"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="oy6-8p-g5L">
+            <objects>
+                <viewController id="RWx-qt-vxl" userLabel="Camera" customClass="ViewController" customModule="FIGGoogleMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bZX-tO-3FR"/>
+                        <viewControllerLayoutGuide type="bottom" id="woR-5p-ttY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jl3-5K-W57" customClass="View">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49Z-e5-gW9" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-marker" translatesAutoresizingMaskIntoConstraints="NO" id="YGO-Dd-eED">
+                                <rect key="frame" x="280" y="280" width="40" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="F52-VT-QRq"/>
+                                    <constraint firstAttribute="width" constant="40" id="llM-Ss-S4g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQ5-P8-uBY">
+                                <rect key="frame" x="0.0" y="539" width="600" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YGO-Dd-eED" firstAttribute="centerX" secondItem="jl3-5K-W57" secondAttribute="centerX" id="3u0-1A-7Hs"/>
+                            <constraint firstItem="FQ5-P8-uBY" firstAttribute="leading" secondItem="jl3-5K-W57" secondAttribute="leadingMargin" constant="-20" id="7x8-80-wRH"/>
+                            <constraint firstItem="YGO-Dd-eED" firstAttribute="centerY" secondItem="jl3-5K-W57" secondAttribute="centerY" id="N79-cc-jK6"/>
+                            <constraint firstItem="49Z-e5-gW9" firstAttribute="leading" secondItem="jl3-5K-W57" secondAttribute="leadingMargin" constant="-20" id="NFW-Jc-jij"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FQ5-P8-uBY" secondAttribute="trailing" constant="-20" id="Qar-pH-DT6"/>
+                            <constraint firstItem="49Z-e5-gW9" firstAttribute="top" secondItem="jl3-5K-W57" secondAttribute="topMargin" id="bXn-cv-OmT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="49Z-e5-gW9" secondAttribute="trailing" constant="-20" id="fuP-tV-96V"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="49Z-e5-gW9" secondAttribute="bottom" id="qtI-TO-TYp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FQ5-P8-uBY" secondAttribute="bottom" constant="40" id="spZ-Zv-Vfz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="book" id="bg8-ZF-0kB"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="FQ5-P8-uBY" id="DL9-O1-g28"/>
+                        <outlet property="mapView" destination="49Z-e5-gW9" id="9wr-Md-c5O"/>
+                        <outlet property="pinImageVerticalConstraint" destination="spZ-Zv-Vfz" id="1e1-7P-7HN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cW-HR-ulr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="1943"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="ZHF-a5-149">
+            <objects>
+                <tabBarController id="fk1-NX-kbp" customClass="MapViewController" customModule="FIGGoogleMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="bK1-hG-w12">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RWx-qt-vxl" kind="relationship" relationship="viewControllers" id="ZIf-31-HUu"/>
+                        <segue destination="ByI-jv-sds" kind="relationship" relationship="viewControllers" id="AMr-Fg-HRc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zyl-5c-Vwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="1587"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="book" width="24" height="24"/>
+        <image name="heart" width="24" height="24"/>
         <image name="icon-marker" width="410" height="410"/>
     </resources>
 </document>
